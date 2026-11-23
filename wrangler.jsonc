@@ -8,13 +8,13 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   // Public URL: https://garmin-mcp.<subdomain>.workers.dev. Preview URLs per
   // version are off, so the only OAuth issuer is the production origin.
-  "workers_dev": true,
+  "workers_dev": false,
   "preview_urls": false,
   "observability": { "enabled": true },
   // OAuth clients, grants and tokens, plus the cached Garmin bearer token.
   // Without an id, the first `wrangler deploy` provisions the namespace
   // ("garmin-mcp-oauth-kv") and later deploys keep using it.
-  "kv_namespaces": [{ "binding": "591257bca62a4c1390e6cbcdb6c9e7e7" }],
+  "kv_namespaces": [{ "binding": "OAUTH_KV", "id": "591257bca62a4c1390e6cbcdb6c9e7e7" }],
   "vars": {
     // "global" (connect.garmin.com) or "cn" (connect.garmin.cn)
     "GARMIN_REGION": "global",
