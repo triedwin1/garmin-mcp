@@ -14,12 +14,12 @@
   // OAuth clients, grants and tokens, plus the cached Garmin bearer token.
   // Without an id, the first `wrangler deploy` provisions the namespace
   // ("garmin-mcp-oauth-kv") and later deploys keep using it.
-  "kv_namespaces": [{ "binding": "OAUTH_KV" }],
+  "kv_namespaces": [{ "binding": "591257bca62a4c1390e6cbcdb6c9e7e7" }],
   "vars": {
     // "global" (connect.garmin.com) or "cn" (connect.garmin.cn)
     "GARMIN_REGION": "global",
     // IANA time zone used to resolve "today" when a date is omitted
-    "TIMEZONE": "Europe/Madrid"
+    "TIMEZONE": "America/Los_Angeles"
   },
   // ACCESS_AUD: audience tag of the Cloudflare Access application that
   // protects /authorize.
