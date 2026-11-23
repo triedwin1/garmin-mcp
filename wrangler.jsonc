@@ -8,7 +8,7 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   // Public URL: https://garmin-mcp.<subdomain>.workers.dev. Preview URLs per
   // version are off, so the only OAuth issuer is the production origin.
-  "workers_dev": false,
+  "workers_dev": true,
   "preview_urls": false,
   "observability": { "enabled": true },
   // OAuth clients, grants and tokens, plus the cached Garmin bearer token.
